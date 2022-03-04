@@ -10,20 +10,20 @@ void printarr(int arr[], int n);
  
 int main(){ 
   
-  int n, i, count = 0;
-  int arr[n],num[n];
-  time_t t;
-  
+  int n, i, num, count = 0;
+  int arr[n];
+  //time_t t;
+  srand(time(NULL));
   printf("Informe o tamanho do vetor desejado\n");
   scanf("%d", &n);
   
   //INICIALIZACAO PARA GERACAO DE NUMEROS ALEATORIOS
-  srand(time(0));
+  
   
   //GERANDO NUMEROS ALEATORIOS, OU TENTANDO...
   for(i = 0; i < n; i++){
   	//i SE TORNANDO ALEATORIO ISSO RESULTA EM NAO PRINTAR
-  	num[i] =  rand() % 1000; 
+  	arr[i] = rand() % 1000;;
   }  
   
   printf("Vetor desordenado: \n");
